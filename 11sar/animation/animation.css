@@ -1,0 +1,179 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.div {
+  background-color: gray;
+  width: 100%;
+}
+
+.box:nth-child(1) {
+  background-color: aquamarine;
+  width: 100%;
+  height: 500px;
+}
+
+.box:nth-child(2) {
+  background-color: greenyellow;
+  width: 100%;
+  height: 500px;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: spin 10s linear infinite;
+}
+
+.go {
+  position: relative;
+  animation: go 7s linear infinite;
+}
+
+.cloud {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.cloud:nth-child(1) {
+  position: relative;
+  top: -20px;
+}
+
+.cloud:nth-child(2) {
+  position: relative;
+  top: -90px;
+  left: 25px;
+}
+
+.cloud:nth-child(3) {
+  position: relative;
+  top: -120px;
+  left: -30px;
+}
+
+.cloud:nth-child(4) {
+  position: relative;
+  top: -200px;
+  left: -30px;
+}
+
+.cloud:nth-child(5) {
+  position: relative;
+  top: -230px;
+  left: -60px;
+}
+
+.cloud:nth-child(6) {
+  position: relative;
+  top: -300px;
+  left: -10px;
+}
+
+.shine:nth-child(1) {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 200px;
+  height: 5px;
+  background-color: yellow;
+  animation: spin 10s linear infinite;
+}
+
+.shine:nth-child(2) {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  width: 5px;
+  height: 200px;
+  background-color: yellow;
+  animation: spin 10s linear infinite;
+}
+
+/* .shine:nth-child(3) {
+        position: absolute;
+        width: 5px;
+        height: 200px;
+        background-color: yellow;
+    } */
+
+.relative {
+  position: relative;
+}
+
+@keyframes sunny {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: wheat;
+  }
+  30% {
+    background-color: yellow;
+  }
+  70% {
+    background-color: orange;
+  }
+  80% {
+    background-color: rgb(255, 128, 0);
+  }
+  100% {
+    background-color: rgb(255, 100, 0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    background-color: white;
+    transform: rotate(0deg);
+  }
+  10% {
+    background-color: wheat;
+    transform: rotate(60deg);
+  }
+  30% {
+    background-color: yellow;
+    transform: rotate(120deg);
+  }
+  70% {
+    background-color: orange;
+    transform: rotate(180deg);
+  }
+  80% {
+    background-color: rgb(255, 128, 0);
+    transform: rotate(240deg);
+  }
+  100% {
+    background-color: rgb(255, 100, 0);
+    transform: rotate(300deg);
+  }
+}
+
+@keyframes go {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 700px;
+  }
+}
+
+.distance:nth-child(1) {
+  background-color: gray;
+  width: 1wh;
+  height: 10px;
+  border-color: white;
+  border-bottom-style: dashed;
+}
+
+.distance:nth-child(2) {
+  background-color: gray;
+  width: 1wh;
+  height: 10px;
+}

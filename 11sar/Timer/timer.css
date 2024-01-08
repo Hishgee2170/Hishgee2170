@@ -1,0 +1,26 @@
+.mybutton {
+    width: 50px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    justify-content: center;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    background-color: wheat;
+    cursor: default;
+}
+
+.flex-aligncenter-gap20px {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

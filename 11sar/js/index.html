@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="addTaskk">
+        <div class="addTaskContainer">
+          <form>
+            <h1>Add Task</h1>
+            <div>
+              <label name="title">Title</label>
+              <input id="title" name="title" />
+            </div>
+            <div>
+              <label name="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+            <div>
+              <label name="status">Status</label>
+              <select name="status" id="status">
+                <option value="todo">To do</option>
+                <option value="inprogress">In progress</option>
+                <option value="stuck">Stuck</option>
+                <option value="done">Done</option>
+              </select>
+            </div>
+            <div>
+              <label name="priority">Priority</label>
+              <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <button onclick="hide(), addCard()" type="submit">Add Task</button>
+          </form>
+        </div>
+      </div>
+      <div
+        id="box1"
+        class="box gap5huwi flex dooshotsuw justcenter align-center"
+        draggable="true"
+      >
+        <div class="smallbox flex justcenter align-center">
+          <h2>To do</h2>
+          1
+        </div>
+        <button id="mybutt1" class="smallbox flex justcenter align-center">
+          + add card
+        </button>
+      </div>
+      <div
+        id="box2"
+        class="box gap5huwi flex dooshotsuw justcenter align-center"
+        draggable="true"
+      >
+        <div class="smallbox flex justcenter align-center">
+          <h2>In progress</h2>
+        </div>
+        <button id="mybutt2" class="smallbox flex justcenter align-center">
+          + add card
+        </button>
+      </div>
+      <div
+        id="box3"
+        class="box gap5huwi flex dooshotsuw justcenter align-center"
+        draggable="true"
+      >
+        <div class="smallbox flex justcenter align-center">
+          <h2>Stuck</h2>
+        </div>
+        <button id="mybutt3" class="smallbox flex justcenter align-center">
+          + add card
+        </button>
+      </div>
+      <div
+        id="box4"
+        class="box gap5huwi flex dooshotsuw justcenter align-center"
+        draggable="true"
+      >
+        <div class="smallbox flex justcenter align-center">
+          <h2>Done</h2>
+        </div>
+        <button id="mybutt4" class="smallbox flex justcenter align-center">
+          + add card
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
