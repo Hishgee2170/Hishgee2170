@@ -1,6 +1,3 @@
-let userrrr = "";
-var father = document.getElementById("fatherDiv");
-
 user = [
   {
     id: 553,
@@ -317,26 +314,31 @@ user = [
     },
   },
 ];
-user.forEach((el) => {
-  userrrr += `<div class="box">
+const father = document.getElementById("fatherDiv-1");
+// const butt
+for (let i = 0; i < user.length; i++) {
+  let lo = document.createElement("div");
+
+  lo.innerHTML = `<div class="box1">
             
           <div class="childBoxSize">
             <img
               class="img"
-              src="${el.avatar}"
+              src=${user[i].avatar}
               alt="Photo"
             />
           </div>
 
           <div class="childBox2Size gap-10">
-            <div class="nameSize"><strong>Firstname lastname</strong></div>
+            <div class="nameSize"><strong>${user[i].first_name}   
+            ${user[i].last_name}</strong></div>
             <div class="flex">
-              <p>Employment title</p>
-              <p>Gender</p>
+              <p>${user[i].employment.title}</p>
+              <p>${user[i].gender}</p>
             </div>
-            <p>Email</p>
+            <p>${user[i].email}</p>
           </div>
         </div>`;
-  father.appendChild(userrrr);
-});
-console.log(userrrr);
+  console.log(lo);
+  father.appendChild(lo);
+}
