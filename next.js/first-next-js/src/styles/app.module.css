@@ -1,0 +1,50 @@
+.first {
+  display: flex;
+  justify-content: center;
+  /* background-image: url("https://img.freepik.com/free-photo/aisle-blur_1127-392.jpg?w=2000&t=st=1704971431~exp=1704972031~hmac=ee37787b327c7cee6ac5f821aec09b0e8c92497aeb97945de397e8f7873a55a0");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  background-color: black;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+.second {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 60%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.box {
+  box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #b2f7a6,
+    0 0 40px #24f011, 0 0 45px #7ade15, 0 0 60px #24e70b, 0 0 70px #3bed04;
+  border-radius: 8px;
+  border: 2px solid white;
+  /* background-image: url("https://img.freepik.com/free-photo/blue-wall-background_53876-88663.jpg?size=626&ext=jpg"); */
+  background-color: wheat;
+}
+.zurag {
+  border-radius: 8px;
+}
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.huwi60 {
+  width: 60%;
+}
+.huwi40 {
+  width: 40%;
+}
+.marginLeft20px {
+  margin-left: 20px;
+}
+.flexGap40 {
+  display: flex;
+  gap: 40px;
+}

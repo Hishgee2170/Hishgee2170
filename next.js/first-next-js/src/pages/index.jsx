@@ -1,36 +1,11 @@
-import Box from "../components/information";
-
+import Box from "../components/dawtaltBuyuUildel";
+import style from "@/styles/app.module.css";
+import App from "@/app/app";
 function Home() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        backgroundColor: "black",
-      }}
-    >
-      <div
-        style={{
-          marginTop: "40px",
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "40px",
-          width: "50%",
-          backgroundColor: "white",
-          paddingBottom: "40px",
-          paddingTop: "40px",
-        }}
-      >
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
+    <div className={style.first}>
+      <div className={style.flexCenter}>
+        <App />
       </div>
     </div>
   );
