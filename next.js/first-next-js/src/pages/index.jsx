@@ -1,4 +1,3 @@
-import Box from "../components/dawtaltBuyuUildel";
 import style from "@/styles/app.module.css";
 import App from "@/app/app";
 function Home() {
