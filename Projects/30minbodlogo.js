@@ -161,3 +161,25 @@
 // let day = 4;
 // function newYear(daays) {
 // }
+// let a = [1, 5, 3, 4, 5];
+// function maxS(arr) {
+//   let s = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] < arr[j]) {
+//         s.push(arr[i] * (j - i));
+//       } else {
+//         s.push(arr[j] * (j - i));
+//       }
+//     }
+//   }
+//   let max = 0;
+//   for (let index = 0; index < s.length; index++) {
+//     if (max < s[index]) {
+//       max = s[index];
+//     }
+//   }
+//   return max;
+// }
+// console.log("max utga :" + maxS(a));
+
